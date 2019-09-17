@@ -1,6 +1,7 @@
 import numpy as np
 import os
 
+### Parameters are logged to a txt file
 class params():
 
     def __init__(self,experiment_name,parameters,filename='params.txt'):
@@ -32,6 +33,7 @@ class params():
         self.file.write("\n")        
         self.file.close()
 
+### Logged files are read
 class import_params():
 
     def __init__(self,filename,filepath=None):

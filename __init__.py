@@ -4,7 +4,7 @@ import os
 ### Parameters are logged to a txt file
 class params():
 
-    def __init__(self,experiment_name,parameters,filename='params.txt'):
+    def __init__(self,experiment_name='Exp',filename='params.txt',parameters):
         self.cwd        = os.getcwd()
         self.experiment = experiment_name
         self.parameters = parameters

@@ -18,18 +18,18 @@ class params():
             print('\nfile '+self.filename+' is created\n')
             mode = "w+"
             self.file       = open(self.filename,mode)
-            self.file.write("Experiment\t\t\t")
+            self.file.write("Experiment\t\t")
             for param in self.parameters.keys():
-                print("parameter is: ",param)
+                #print("parameter is: ",param)
                 self.file.write(param)
-                self.file.write("\t\t\t")
+                self.file.write("\t\t")
             self.file.write("\n")
         self.file.write(str(self.experiment))
-        self.file.write("\t\t\t")
+        self.file.write("\t\t")
         for value in self.parameters.values():
-            print("value is    :  ",value)
+            #print("value is    :  ",value)
             self.file.write(str(value))
-            self.file.write("\t\t\t")
+            self.file.write("\t\t")
         self.file.write("\n")        
         self.file.close()
 
